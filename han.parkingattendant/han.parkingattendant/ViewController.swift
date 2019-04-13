@@ -13,7 +13,10 @@ import OpenALPRSwift
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
+    @IBOutlet weak var livepreview: UIView!
     let alprScanner = OAScanner(country: "eu")
+    var preview: AVCaptureVideoPreviewLayer?
+    @IBOutlet weak var kentekenlabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +34,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         captureSession.startRunning()
         
-        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        view.layer.addSublayer(previewLayer)
-        previewLayer.frame = view.frame
+        self.preview = AVCaptureVideoPreviewLayer(session: captureSession)
+        self.preview?.frame = self.livepreview.bounds
+        self.livepreview.layer.addSublayer(self.preview!)
         
         let dataOutput = AVCaptureVideoDataOutput()
         dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
@@ -42,14 +45,16 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        
         let imageBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)!
         let ciimage : CIImage = CIImage(cvPixelBuffer: imageBuffer)
         let image : UIImage? = self.convert(cmage: ciimage)
         
         alprScanner?.scanImage(image, onSuccess: { (plates) in
             plates?.forEach({ (plate) in
-                print("result: \(plate.number)")
+                DispatchQueue.main.async {
+                    self.kentekenlabel.text = plate.number!
+                    print(plate.number)
+                }
             })
         }, onFailure: { (error) in
             print("error: \(error?.localizedDescription)")
