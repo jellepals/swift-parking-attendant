@@ -1,0 +1,10 @@
+platform :ios, '12.2'
+
+use_frameworks!
+
+target 'han.parkingattendant' do
+    pre_install do |installer|
+        Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+    end
+    pod 'OpenALPRSwift', :git => 'https://github.com/yasirmturk/openalpr-swift.git', :tag => 'v1.0.0'
+end

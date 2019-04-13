@@ -9,9 +9,12 @@
 import UIKit
 import AVKit
 import Vision
+import OpenALPRSwift
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
-
+    
+    let alprScanner = OAScanner(country: "eu")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createCamera();
@@ -35,17 +38,22 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         let dataOutput = AVCaptureVideoDataOutput()
         dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
         captureSession.addOutput(dataOutput)
-    
+        
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-       
+        
         let imageBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)!
         let ciimage : CIImage = CIImage(cvPixelBuffer: imageBuffer)
-        let image : UIImage = self.convert(cmage: ciimage)
-      
+        let image : UIImage? = self.convert(cmage: ciimage)
         
-        
+        alprScanner?.scanImage(image, onSuccess: { (plates) in
+            plates?.forEach({ (plate) in
+                print("result: \(plate.number)")
+            })
+        }, onFailure: { (error) in
+            print("error: \(error?.localizedDescription)")
+        })
         
     }
     
@@ -57,6 +65,5 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         let image:UIImage = UIImage.init(cgImage: cgImage)
         return image
     }
-
+    
 }
-

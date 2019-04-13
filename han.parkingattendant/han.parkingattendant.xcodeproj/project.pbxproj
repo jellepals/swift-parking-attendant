@@ -13,6 +13,7 @@
 		349F4F722261E9D900B42FAC /* han_parkingattendant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 349F4F702261E9D900B42FAC /* han_parkingattendant.xcdatamodeld */; };
 		349F4F742261E9DA00B42FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349F4F732261E9DA00B42FAC /* Assets.xcassets */; };
 		349F4F772261E9DA00B42FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349F4F752261E9DA00B42FAC /* LaunchScreen.storyboard */; };
+		7138C8A369C4D695FD0A93D5 /* Pods_han_parkingattendant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770232F0854BCAC86705929C /* Pods_han_parkingattendant.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		349F4F732261E9DA00B42FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		349F4F762261E9DA00B42FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		349F4F782261E9DA00B42FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		770232F0854BCAC86705929C /* Pods_han_parkingattendant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_han_parkingattendant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF92BA1AB0539DDA18AF6614 /* Pods-han.parkingattendant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-han.parkingattendant.debug.xcconfig"; path = "Target Support Files/Pods-han.parkingattendant/Pods-han.parkingattendant.debug.xcconfig"; sourceTree = "<group>"; };
+		FBC4C01EA991DDDAE55389FA /* Pods-han.parkingattendant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-han.parkingattendant.release.xcconfig"; path = "Target Support Files/Pods-han.parkingattendant/Pods-han.parkingattendant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7138C8A369C4D695FD0A93D5 /* Pods_han_parkingattendant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				349F4F682261E9D900B42FAC /* han.parkingattendant */,
 				349F4F672261E9D900B42FAC /* Products */,
+				B8BDA3CA3E972B6649A00395 /* Pods */,
+				CB57902E34F62EEF09D1CEBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = han.parkingattendant;
 			sourceTree = "<group>";
 		};
+		B8BDA3CA3E972B6649A00395 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF92BA1AB0539DDA18AF6614 /* Pods-han.parkingattendant.debug.xcconfig */,
+				FBC4C01EA991DDDAE55389FA /* Pods-han.parkingattendant.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB57902E34F62EEF09D1CEBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				770232F0854BCAC86705929C /* Pods_han_parkingattendant.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 349F4F7B2261E9DA00B42FAC /* Build configuration list for PBXNativeTarget "han.parkingattendant" */;
 			buildPhases = (
+				FA9741FFAA86C0D628352146 /* [CP] Check Pods Manifest.lock */,
 				349F4F622261E9D900B42FAC /* Sources */,
 				349F4F632261E9D900B42FAC /* Frameworks */,
 				349F4F642261E9D900B42FAC /* Resources */,
+				9FAB284DA7EC98472C7A304D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FAB284DA7EC98472C7A304D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-han.parkingattendant/Pods-han.parkingattendant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OpenALPRSwift/OpenALPRSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenALPRSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-han.parkingattendant/Pods-han.parkingattendant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA9741FFAA86C0D628352146 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-han.parkingattendant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		349F4F622261E9D900B42FAC /* Sources */ = {
@@ -284,17 +357,19 @@
 		};
 		349F4F7C2261E9DA00B42FAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF92BA1AB0539DDA18AF6614 /* Pods-han.parkingattendant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2796BQPQR;
+				DEVELOPMENT_TEAM = D2SW3ZD6ZN;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = han.parkingattendant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jellepals.han-parkingattendant";
+				PRODUCT_BUNDLE_IDENTIFIER = han.parkingattendant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,17 +378,19 @@
 		};
 		349F4F7D2261E9DA00B42FAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC4C01EA991DDDAE55389FA /* Pods-han.parkingattendant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2796BQPQR;
+				DEVELOPMENT_TEAM = D2SW3ZD6ZN;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = han.parkingattendant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jellepals.han-parkingattendant";
+				PRODUCT_BUNDLE_IDENTIFIER = han.parkingattendant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,29 @@
+PODS:
+  - OpenALPRSwift (1.0.0):
+    - OpenCV (~> 3.1.0.1)
+  - OpenCV (3.1.0.1)
+
+DEPENDENCIES:
+  - OpenALPRSwift (from `https://github.com/yasirmturk/openalpr-swift.git`, tag `v1.0.0`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OpenCV
+
+EXTERNAL SOURCES:
+  OpenALPRSwift:
+    :git: https://github.com/yasirmturk/openalpr-swift.git
+    :tag: v1.0.0
+
+CHECKOUT OPTIONS:
+  OpenALPRSwift:
+    :git: https://github.com/yasirmturk/openalpr-swift.git
+    :tag: v1.0.0
+
+SPEC CHECKSUMS:
+  OpenALPRSwift: 6ef3a9fccf1ca48a125407236b99540bbeabdfe5
+  OpenCV: 41c4250e2b06a394d6fbb634b5fa622cdd846018
+
+PODFILE CHECKSUM: 411a26cacecfb9c0c98ff5fbf682e6b807b2125f
+
+COCOAPODS: 1.6.1
