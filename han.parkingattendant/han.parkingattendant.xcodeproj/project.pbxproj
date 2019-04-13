@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		349F4F6A2261E9D900B42FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F4F692261E9D900B42FAC /* AppDelegate.swift */; };
+		349F4F6C2261E9D900B42FAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F4F6B2261E9D900B42FAC /* ViewController.swift */; };
+		349F4F6F2261E9D900B42FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349F4F6D2261E9D900B42FAC /* Main.storyboard */; };
+		349F4F722261E9D900B42FAC /* han_parkingattendant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 349F4F702261E9D900B42FAC /* han_parkingattendant.xcdatamodeld */; };
+		349F4F742261E9DA00B42FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349F4F732261E9DA00B42FAC /* Assets.xcassets */; };
+		349F4F772261E9DA00B42FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349F4F752261E9DA00B42FAC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		349F4F662261E9D900B42FAC /* han.parkingattendant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = han.parkingattendant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		349F4F692261E9D900B42FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		349F4F6B2261E9D900B42FAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		349F4F6E2261E9D900B42FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		349F4F712261E9D900B42FAC /* han_parkingattendant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = han_parkingattendant.xcdatamodel; sourceTree = "<group>"; };
+		349F4F732261E9DA00B42FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		349F4F762261E9DA00B42FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		349F4F782261E9DA00B42FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		349F4F632261E9D900B42FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		349F4F5D2261E9D900B42FAC = {
+			isa = PBXGroup;
+			children = (
+				349F4F682261E9D900B42FAC /* han.parkingattendant */,
+				349F4F672261E9D900B42FAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		349F4F672261E9D900B42FAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				349F4F662261E9D900B42FAC /* han.parkingattendant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		349F4F682261E9D900B42FAC /* han.parkingattendant */ = {
+			isa = PBXGroup;
+			children = (
+				349F4F692261E9D900B42FAC /* AppDelegate.swift */,
+				349F4F6B2261E9D900B42FAC /* ViewController.swift */,
+				349F4F6D2261E9D900B42FAC /* Main.storyboard */,
+				349F4F732261E9DA00B42FAC /* Assets.xcassets */,
+				349F4F752261E9DA00B42FAC /* LaunchScreen.storyboard */,
+				349F4F782261E9DA00B42FAC /* Info.plist */,
+				349F4F702261E9D900B42FAC /* han_parkingattendant.xcdatamodeld */,
+			);
+			path = han.parkingattendant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		349F4F652261E9D900B42FAC /* han.parkingattendant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349F4F7B2261E9DA00B42FAC /* Build configuration list for PBXNativeTarget "han.parkingattendant" */;
+			buildPhases = (
+				349F4F622261E9D900B42FAC /* Sources */,
+				349F4F632261E9D900B42FAC /* Frameworks */,
+				349F4F642261E9D900B42FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = han.parkingattendant;
+			productName = han.parkingattendant;
+			productReference = 349F4F662261E9D900B42FAC /* han.parkingattendant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		349F4F5E2261E9D900B42FAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jelle Pals";
+				TargetAttributes = {
+					349F4F652261E9D900B42FAC = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 349F4F612261E9D900B42FAC /* Build configuration list for PBXProject "han.parkingattendant" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 349F4F5D2261E9D900B42FAC;
+			productRefGroup = 349F4F672261E9D900B42FAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				349F4F652261E9D900B42FAC /* han.parkingattendant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		349F4F642261E9D900B42FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349F4F772261E9DA00B42FAC /* LaunchScreen.storyboard in Resources */,
+				349F4F742261E9DA00B42FAC /* Assets.xcassets in Resources */,
+				349F4F6F2261E9D900B42FAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		349F4F622261E9D900B42FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349F4F6C2261E9D900B42FAC /* ViewController.swift in Sources */,
+				349F4F722261E9D900B42FAC /* han_parkingattendant.xcdatamodeld in Sources */,
+				349F4F6A2261E9D900B42FAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		349F4F6D2261E9D900B42FAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349F4F6E2261E9D900B42FAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		349F4F752261E9DA00B42FAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349F4F762261E9DA00B42FAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		349F4F792261E9DA00B42FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		349F4F7A2261E9DA00B42FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		349F4F7C2261E9DA00B42FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2796BQPQR;
+				INFOPLIST_FILE = han.parkingattendant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jellepals.han-parkingattendant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		349F4F7D2261E9DA00B42FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2796BQPQR;
+				INFOPLIST_FILE = han.parkingattendant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jellepals.han-parkingattendant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		349F4F612261E9D900B42FAC /* Build configuration list for PBXProject "han.parkingattendant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349F4F792261E9DA00B42FAC /* Debug */,
+				349F4F7A2261E9DA00B42FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		349F4F7B2261E9DA00B42FAC /* Build configuration list for PBXNativeTarget "han.parkingattendant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349F4F7C2261E9DA00B42FAC /* Debug */,
+				349F4F7D2261E9DA00B42FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		349F4F702261E9D900B42FAC /* han_parkingattendant.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				349F4F712261E9D900B42FAC /* han_parkingattendant.xcdatamodel */,
+			);
+			currentVersion = 349F4F712261E9D900B42FAC /* han_parkingattendant.xcdatamodel */;
+			path = han_parkingattendant.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 349F4F5E2261E9D900B42FAC /* Project object */;
+}
